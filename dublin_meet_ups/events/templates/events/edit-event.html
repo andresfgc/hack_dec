@@ -2,9 +2,21 @@
 {% load static %}
 
 {% block content %}
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Dublin Meet Ups"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/dublin_meet_ups/events/static/css/events.css">
+<title>Dublin Meet ups</title>
+</head>  
+<body>
         <h1>Edit Event Page</h1>
-        <div class="container">
+        <section class="container-fluid">
             <form class="row g-3">
                 <div class="col-md-6">
                   <label for="editInputEventName" class="form-label">Event Name</label>
@@ -35,6 +47,9 @@
                   </div>
               </form>
     
-        </div>
-    </body>
+            </section>
+  </body>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </html>
 {% endblock %}
