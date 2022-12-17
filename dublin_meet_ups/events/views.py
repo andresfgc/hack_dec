@@ -11,3 +11,7 @@ def events_list(request):
 
 def add_event(request):
     return render(request, 'events/add-event.html')
+
+
+def edit_event(request):
+    return render(request, 'events/edit-event.html')
