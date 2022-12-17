@@ -4,5 +4,6 @@ from django.conf import settings
 from . import views
 
 urlpatterns = [
-    path('event/', views.event, name='event')
+    path('', views.events_list, name='events_list'),
+    path('event/', views.event, name='event'),
 ]
