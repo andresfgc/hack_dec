@@ -31,6 +31,45 @@
     </head>
     <body>
         {% block page_header %}
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-xxl">
+              <!-- navbar brand / title -->
+              <a class="navbar-brand" href="test_nav.html">
+                <span class="text-secondary fw-bold">
+                  Dublin Meet ups
+                </span>
+              </a>
+              <!-- toggle button for mobile nav -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <!-- navbar links -->
+              <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Events
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">Coffee/Cafe events</a></li>
+                      <li><a class="dropdown-item" href="#">Secret Santa events</a></li>
+                      <li><a class="dropdown-item" href="#">Pubs/Drinks events</a></li>
+                      <li><a class="dropdown-item" href="#">Language exchange events</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Profile</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
         {% endblock %}
 
         {% block content %}
