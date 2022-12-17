@@ -2,3 +2,8 @@ h1 {
     color: red;
     text-align: center;
 }
+
+a {
+    color: black!important;
+    text-decoration: none!important;
+}

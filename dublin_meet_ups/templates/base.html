@@ -58,7 +58,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                       <li><a class="dropdown-item" href="{% url 'event' %}">Single Event</a></li>
-                      <li><a class="dropdown-item" href="{% url 'events_list' %}">List of Events</a></li>
+                      <li><a class="dropdown-item" href="{% url 'events_list' 'all' %}">List of Events</a></li>
                       <li><a class="dropdown-item" href="{% url 'add_event' %}">Add Event</a></li>
                       <li><a class="dropdown-item" href="{% url 'edit_event' %}">Edit Event</a></li>
                     </ul>
