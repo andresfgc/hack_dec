@@ -4,66 +4,31 @@
 {% block content %}
 <!--Events-->
 <div class="container justify-content-center">
-    <h2 class="text-center">Secret Santa</h2>
-    <div class="card mb-3" style="max-width: 1400px;">
-        <div class="row g-0">
-          <div class="col-md-3 d-none d-md-block">
-            <img src="/assets/images/woman.jpg" class="img-fluid rounded-start" alt="woman in christmas" style="width: 200px; height: 200px; object-fit: cover;">
-          </div>
-          <div class="col-md-6">
-            <div class="card-body">
-              <h5 class="card-title">Event title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus assumenda et aliquam iure pariatur rem nihil, sapiente impedit laborum ad animi dolor beatae inventore maxime ratione sed officia consequuntur.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card-body">
-              <p class="card-text ">Placeholder Event</p>
-              <p class="card-text">Jan 21st - 5pm</p>
-              <p class="card-text">Some Dublin Bar</p>
-            </div>
-          </div>
+    <h2 class="text-center">{{ event_type }}</h2>
+    {% for event in events %}
+        <div class="card mb-3" style="max-width: 1400px;">
+            <a href="{% url 'event' event.id %}">
+                <div class="row g-0">
+                    <div class="col-md-3 d-none d-md-block">
+                        <img src="/assets/images/woman.jpg" class="img-fluid rounded-start" alt="woman in christmas" style="width: 200px; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                        <h5 class="card-title">{{ event.title }}</h5>
+                        <p class="card-text">{{ event.description }}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-body">
+                        <p class="card-text ">{{ event.category }}</p>
+                        <p class="card-text">Jan 21st - 5pm</p>
+                        <p class="card-text">{{ event.location }}</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
         </div>
-    </div>
-    <div class="card mb-3" style="max-width: 1400px;">
-        <div class="row g-0">
-          <div class="col-md-3 d-none d-md-block">
-            <img src="/assets/images/woman.jpg" class="img-fluid rounded-start" alt="woman in christmas" style="width: 200px; height: 200px; object-fit: cover;">
-          </div>
-          <div class="col-md-6">
-            <div class="card-body">
-              <h5 class="card-title">Event title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus assumenda et aliquam iure pariatur rem nihil, sapiente impedit laborum ad animi dolor beatae inventore maxime ratione sed officia consequuntur.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card-body">
-              <p class="card-text">Placeholder Event</p>
-              <p class="card-text">Jan 21st - 5pm</p>
-              <p class="card-text">Some Dublin Bar</p>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="card mb-3" style="max-width: 1400px;">
-        <div class="row g-0">
-          <div class="col-md-3 d-none d-md-block">
-            <img src="/assets/images/carousel.jpg" class="img-fluid rounded-start" alt="carousel" style="width: 200px; height: 200px; object-fit: cover;">
-          </div>
-          <div class="col-md-6">
-            <div class="card-body">
-              <h5 class="card-title">Event title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus assumenda et aliquam iure pariatur rem nihil, sapiente impedit laborum ad animi dolor beatae inventore maxime ratione sed officia consequuntur.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card-body">
-              <p class="card-text">Placeholder Event</p>
-              <p class="card-text">Jan 21st - 5pm</p>
-              <p class="card-text">Some Dublin Bar</p>
-            </div>
-          </div>
-        </div>
-    </div>
+    {% endfor %}
 </div>
 {% endblock %}
