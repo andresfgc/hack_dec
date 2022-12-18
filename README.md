@@ -150,6 +150,7 @@ Testing was done...
 ### Content
 
 ### Acknowledgements
+Secret Santa attribution link - Image by <a href="https://www.freepik.com/free-vector/hand-drawn-secret-santa-illustration_20112076.htm">Freepik</a>
 
 [Back to top](#Table-of-contents)
 
