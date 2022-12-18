@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!--Events-->
+<div class="container justify-content-center">
+    <h2 class="text-center">Event Title</h2>
+    <div class="card mb-3" style="max-width: 1400px;">
+        <div class="row g-0">
+          <div class="col-md-6 d-none d-md-block">
+            <img src="/assets/images/woman.jpg" class="img-fluid rounded-start" alt="woman in christmas" style="width: 200px; height: 200px; object-fit: cover;">
+          </div>
+          <div class="col-md-3">
+            <div class="card-body">
+              <p class="card-text">Secret Santa</p>
+              <p class="card-text"> Some Dublin Bar</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card-body">
+              <p class="card-text ">Jan 6th - 21:00</p>
+              <p class="card-text">By: Username</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="card mb-3" style="max-width: 1400px;">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Description</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus assumenda et aliquam iure pariatur rem nihil, sapiente impedit laborum ad animi dolor beatae inventore maxime ratione sed officia consequuntur.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+            <div class="card-body">
+              <p class="card-text">Pets <i class="bi bi-check2-circle"></i></p>
+              <p class="card-text">Smoking <i class="bi bi-slash-circle"></i></p>
+              <p class="card-text">People 5/10</p>
+            </div>
+          </div>
+          <div class="col-md-2 d-flex align-items-center">
+            <div class="card-body">
+                <button type="button" class="btn btn-success btn-lg align-center">Join</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
