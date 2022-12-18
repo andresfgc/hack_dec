@@ -10,13 +10,13 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Dublin Meet Ups"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="/dublin_meet_ups/events/static/css/events.css">
 <title>Dublin Meet ups</title>
 </head>  
 <body>
-        <h1>Edit Event Page</h1>
+        <h1 class="add-event-heading uppercase text-center">Edit Event Page</h1>
         <section class="container-fluid">
+          <div class="bg-color-add-event center-form">
             <form class="row g-3">
                 <div class="col-md-6">
                   <label for="editInputEventName" class="form-label">Event Name</label>
@@ -40,13 +40,13 @@
                 </div>
                 </div>
                 <div class="col-md-6">
-                  <button type="button" class="btn btn-danger" id="editCancelBtn">Cancel</button>
+                  <button type="submit" class="btn btn-danger editCancelBtn" id="editCancelBtn">Cancel</button>
                 </div>
                 <div class="col-md-6">
-                    <button type="button" class="btn btn-success" id="editSubmitBtn">Submit</button>
+                    <button type="submit" class="btn btn-success editSubmitBtn" id="editSubmitBtn">Submit</button>
                   </div>
               </form>
-    
+            </div>
             </section>
   </body>
  
