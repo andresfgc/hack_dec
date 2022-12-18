@@ -2,9 +2,21 @@
 {% load static %}
 
 {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Dublin Meet Ups"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
+<link rel="stylesheet" href="/dublin_meet_ups/events/static/css/events.css">
+<title>Dublin Meet ups</title>
+</head>
 <body>
-    <h1>Add Event Page</h1>
-    <div class="container">
+    <h1 class="add-event-heading uppercase text-center">Add Event Page</h1>
+    <section class="container-fluid">
+      <div class="bg-color-add-event center-form">
         <form class="row g-3">
             <div class="col-md-6">
               <label for="inputEventName" class="form-label">Event Name</label>
@@ -26,15 +38,18 @@
               <label for="inputDescription" class="form-label">Description</label>
               <input type="text" class="form-control" id="inputDescription">
             </div>
-            </div>
-            <div class="col-md-6">
-              <button type="button" class="btn btn-danger" id="cancelBtn">Cancel</button>
-            </div>
-            <div class="col-md-6">
-                <button type="button" class="btn btn-success" id="submitBtn">Submit</button>
+            <div class="form-row text-center">
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-danger add-cancel-btn" id="cancelBtn">Cancel</button>
               </div>
+              <div class="col-md-6">
+                  <button type="submit" class="btn btn-success add-submit-btn" id="submitBtn">Submit</button>
+              </div>
+          </div>
           </form>
-
-    </div>
+        </div>
+        </section>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</html>
 {% endblock %}

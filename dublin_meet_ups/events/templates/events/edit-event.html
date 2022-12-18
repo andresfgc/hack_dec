@@ -2,9 +2,21 @@
 {% load static %}
 
 {% block content %}
-    <body>
-        <h1>Edit Event Page</h1>
-        <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Dublin Meet Ups"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
+<link rel="stylesheet" href="/dublin_meet_ups/events/static/css/events.css">
+<title>Dublin Meet ups</title>
+</head>  
+<body>
+        <h1 class="edit-event-heading uppercase text-center">Edit Event Page</h1>
+        <section class="container-fluid">
+          <div class="bg-color-add-event center-form">
             <form class="row g-3">
                 <div class="col-md-6">
                   <label for="editInputEventName" class="form-label">Event Name</label>
@@ -26,15 +38,19 @@
                   <label for="editInputDescription" class="form-label">Description</label>
                   <input type="text" class="form-control" id="editInputDescription" value="">
                 </div>
+                <div class="form-row text-center">
+                <div class="col-md-6">
+                  <button type="submit" class="btn btn-danger edit-cancel-btn" id="editCancelBtn">Cancel</button>
                 </div>
                 <div class="col-md-6">
-                  <button type="button" class="btn btn-danger" id="editCancelBtn">Cancel</button>
-                </div>
-                <div class="col-md-6">
-                    <button type="button" class="btn btn-success" id="editSubmitBtn">Submit</button>
+                    <button type="submit" class="btn btn-success edi-submit-btn" id="editSubmitBtn">Submit</button>
                   </div>
+                </div>
               </form>
-    
-        </div>
-    </body>
+            </div>
+            </section>
+  </body>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </html>
 {% endblock %}
